@@ -5,6 +5,7 @@ import Hero from "./Hero";
 import Nav from "./Nav";
 import PopularProductCard from "./PopularProductCard";
 import PopularProducts from "./PopularProducts";
+import ServiceCard from "./ServiceCard";
 import Services from "./Services";
 import ShoeCard from "./ShoeCard";
 import SpecialOffer from "./SpecialOffer";
@@ -24,4 +25,5 @@ export {
   Button,
   ShoeCard,
   PopularProductCard,
+  ServiceCard,
 };
