@@ -1,3 +1,4 @@
+import Button from "./Button";
 import CustomerReview from "./CustomerReview";
 import Footer from "./Footer";
 import Hero from "./Hero";
@@ -18,4 +19,5 @@ export {
   Subscribe,
   SuperQuality,
   Nav,
+  Button,
 };
