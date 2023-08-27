@@ -15,3 +15,9 @@ export interface popularProductCardTypes {
   imgURL: any;
   rating: number;
 }
+
+export interface ServiceCardProps {
+  imgURL: any;
+  label: string;
+  subtext: string;
+}
