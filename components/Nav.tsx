@@ -55,7 +55,7 @@ const Nav = () => {
                 <ul className="">
                   {navLinks.map((item) => {
                     return (
-                      <li className="mr-1">
+                      <li className="mr-1" key={item.label}>
                         <Link
                           className="font-montserrat leading-normal text-lg text-slate-gray"
                           href={item.href}
