@@ -9,3 +9,10 @@ export interface shoeCardTypes {
   changeBigShoeImage: (arg0: any) => void;
   bigShoeImage: any;
 }
+
+export interface popularProductCardTypes {
+  name: string;
+  price: string;
+  imgURL: any;
+  rating: number;
+}
