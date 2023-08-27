@@ -8,8 +8,8 @@ const Nav = () => {
   const [show, setShow] = useState(false);
   return (
     <>
-      <header className="padding-x py-8 absolute z-10 w-full">
-        <nav className="flex justify-between items-center max-container">
+      <header className="padding-x py-8 w-full sticky top-0 bg-slate-200 backdrop-filter backdrop-blur-lg bg-opacity-30 z-50">
+        <nav className="flex justify-between items-center max-container ">
           <Link href="/">
             <Image
               src="/images/header-logo.svg"
@@ -52,7 +52,7 @@ const Nav = () => {
               />
             )}
             {show && (
-              <div className="bg-slate-100 px-3 pr-8 py-2 rounded-xl absolute right-0 mt-2 mr-8 ">
+              <div className="bg-slate-200 px-3 pr-8 py-2 rounded-xl absolute right-0 mt-2 mr-8 ">
                 <ul className="">
                   {navLinks.map((item) => {
                     return (
