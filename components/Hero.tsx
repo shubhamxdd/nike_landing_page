@@ -1,3 +1,5 @@
+"use client"
+
 import { arrowRight } from "@/public/icons";
 import { Button, ShoeCard } from ".";
 import { shoes, statistics } from "@/constants";
@@ -50,10 +52,14 @@ const Hero = () => {
             height={500}
             className="object-contain relative z-10"
           />
-          <div>
+          <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6">
             {shoes.map((shoe, index) => (
               <div key={index}>
-                <ShoeCard />
+                <ShoeCard
+                  imgURL={shoe}
+                  bigShoeImage=""
+                  changeBigShoeImage={() => {}}
+                />
               </div>
             ))}
           </div>
