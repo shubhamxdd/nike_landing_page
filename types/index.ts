@@ -6,6 +6,6 @@ export interface buttonTypes {
 
 export interface shoeCardTypes {
   imgURL: any;
-  changeBigShoeImage: () => void;
+  changeBigShoeImage: (arg0: any) => void;
   bigShoeImage: any;
 }

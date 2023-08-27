@@ -1,12 +1,14 @@
-"use client"
+"use client";
 
 import { arrowRight } from "@/public/icons";
 import { Button, ShoeCard } from ".";
 import { shoes, statistics } from "@/constants";
 import Image from "next/image";
 import { bigShoe1 } from "@/public/images";
+import { useState } from "react";
 
 const Hero = () => {
+  const [bigShoeImg, setbigShoeImg] = useState(bigShoe1);
   return (
     <>
       <section
@@ -46,7 +48,7 @@ const Hero = () => {
         </div>
         <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center ">
           <Image
-            src={bigShoe1}
+            src={bigShoeImg}
             alt="big-shoe"
             width={610}
             height={500}
@@ -57,8 +59,10 @@ const Hero = () => {
               <div key={index}>
                 <ShoeCard
                   imgURL={shoe}
-                  bigShoeImage=""
-                  changeBigShoeImage={() => {}}
+                  bigShoeImage={bigShoeImg}
+                  changeBigShoeImage={(shoe) => {
+                    setbigShoeImg(shoe);
+                  }}
                 />
               </div>
             ))}
