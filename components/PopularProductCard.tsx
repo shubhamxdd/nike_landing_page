@@ -10,7 +10,7 @@ const PopularProductCard = ({
 }: popularProductCardTypes) => {
   return (
     <>
-      <div className="flex flex-1 flex-col w-full max-sm:w-full">
+      <div className="flex flex-1 flex-col w-full max-sm:w-full max-sm:ml-[8%]">
         <Image src={imgURL} alt="shoe image" width={280} height={280} />
         <div className="mt-8 flex justify-start gap-2.5">
           <Image src={star} alt="star" width={24} height={24} />
