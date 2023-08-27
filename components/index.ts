@@ -1,6 +1,7 @@
 import CustomerReview from "./CustomerReview";
 import Footer from "./Footer";
 import Hero from "./Hero";
+import Nav from "./Nav";
 import PopularProducts from "./PopularProducts";
 import Services from "./Services";
 import SpecialOffer from "./SpecialOffer";
@@ -16,4 +17,5 @@ export {
   SpecialOffer,
   Subscribe,
   SuperQuality,
+  Nav,
 };

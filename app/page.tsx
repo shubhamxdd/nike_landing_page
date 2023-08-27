@@ -7,13 +7,14 @@ import {
   SpecialOffer,
   Subscribe,
   SuperQuality,
+  Nav,
 } from "@/components";
 
 export default function Home() {
   return (
     <>
       <main className="relative">
-        nav component
+        <Nav />
         <section className="xl:p-1 wide:padding-r padding-b">
           <Hero />
         </section>
