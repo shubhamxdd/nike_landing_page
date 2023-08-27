@@ -1,7 +1,21 @@
+import { services } from "@/constants";
+import { ServiceCard } from ".";
+
 const Services = () => {
   return (
-    <div>Services</div>
-  )
-}
+    <section className="max-container flex justify-center flex-wrap gap-9">
+      {services.map((service) => (
+        <>
+          <ServiceCard
+            key={service.label}
+            imgURL={service.imgURL}
+            label={service.label}
+            subtext={service.subtext}
+          />
+        </>
+      ))}
+    </section>
+  );
+};
 
-export default Services
+export default Services;
