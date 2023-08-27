@@ -16,7 +16,7 @@ const Nav = () => {
               alt="header-logo"
               width={130}
               height={29}
-              className="ml-[9px]"
+              className="ml-[1px]"
             />
           </Link>
           <ul className="flex flex-1 justify-center items-center gap-16 max-lg:hidden">
