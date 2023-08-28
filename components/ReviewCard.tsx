@@ -1,7 +1,16 @@
-const ReviewCard = () => {
-  return (
-    <div>ReviewCard</div>
-  )
-}
+import { ReviewCardProps } from "@/types";
 
-export default ReviewCard
+const ReviewCard = ({
+  customerName,
+  feedback,
+  imgURL,
+  rating,
+}: ReviewCardProps) => {
+  return (
+  <div>
+    
+  </div>
+  );
+};
+
+export default ReviewCard;

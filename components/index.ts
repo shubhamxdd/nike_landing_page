@@ -5,6 +5,7 @@ import Hero from "./Hero";
 import Nav from "./Nav";
 import PopularProductCard from "./PopularProductCard";
 import PopularProducts from "./PopularProducts";
+import ReviewCard from "./ReviewCard";
 import ServiceCard from "./ServiceCard";
 import Services from "./Services";
 import ShoeCard from "./ShoeCard";
@@ -26,4 +27,5 @@ export {
   ShoeCard,
   PopularProductCard,
   ServiceCard,
+  ReviewCard,
 };

@@ -25,3 +25,10 @@ export interface ServiceCardProps {
   label: string;
   subtext: string;
 }
+
+export interface ReviewCardProps {
+  imgURL: any;
+  customerName: string;
+  rating: number;
+  feedback: string;
+}
