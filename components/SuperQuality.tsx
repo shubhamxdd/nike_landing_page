@@ -1,4 +1,3 @@
-import { arrowRight } from "@/public/icons";
 import { Button } from ".";
 import Image from "next/image";
 import { shoe8 } from "@/public/images";
@@ -25,7 +24,10 @@ const SuperQuality = () => {
             Our dedication to detail and excellence ensures your satisfaction
           </p>
           <div className="mt-11">
-            <Button label="View Details" />
+            <Button
+              label="View Details"
+              hoverClass="hover:bg-white hover:text-slate-gray"
+            />
           </div>
         </div>
         <div className="flex flex-1 justify-center items-center">

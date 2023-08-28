@@ -30,7 +30,11 @@ const Hero = () => {
             Discover stylish Nike arrivals, quality comfort, and innovation for
             your active life.
           </p>
-          <Button label="Shop Now" iconURL={arrowRight} />
+          <Button
+            label="Shop Now"
+            iconURL={arrowRight}
+            hoverClass="hover:bg-white hover:text-slate-gray"
+          />
           <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
             {statistics.map((stats) => {
               return (

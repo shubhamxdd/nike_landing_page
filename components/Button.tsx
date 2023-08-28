@@ -1,10 +1,25 @@
 import { buttonTypes } from "@/types";
 import Image from "next/image";
 
-const Button = ({ label, iconURL }: buttonTypes) => {
+const Button = ({
+  label,
+  iconURL,
+  backgroundColor,
+  borderColor,
+  textColor,
+  hoverClass,
+}: buttonTypes) => {
   return (
     <>
-      <button className="flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none bg-coral-red rounded-full text-white border-coral-red">
+      <button
+        className={`flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none rounded-full
+      ${hoverClass}
+      ${
+        backgroundColor
+          ? `${backgroundColor} ${textColor} ${borderColor} `
+          : "bg-coral-red  text-white border-coral-red"
+      }`}
+      >
         {label}
         {iconURL && (
           <Image

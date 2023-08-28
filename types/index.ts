@@ -1,6 +1,10 @@
 export interface buttonTypes {
   label: string;
   iconURL?: any;
+  backgroundColor?: string;
+  borderColor?: string;
+  textColor?: string;
+  hoverClass?: string;
 }
 
 export interface shoeCardTypes {
