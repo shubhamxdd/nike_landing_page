@@ -1,10 +1,16 @@
 "use client";
 import { navLinks } from "@/constants";
+import { Switch } from "@headlessui/react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-const Nav = () => {
+interface NavProps {
+  darkMode: boolean;
+  setDarkMode: (darkMode: boolean) => void;
+}
+
+const Nav = ({ darkMode, setDarkMode }: NavProps) => {
   const [show, setShow] = useState(false);
   return (
     <>
@@ -24,7 +30,7 @@ const Nav = () => {
               return (
                 <li key={item.label}>
                   <Link
-                    className="font-montserrat leading-normal text-lg text-slate-gray dark:text-white-400"
+                    className="font-montserrat leading-normal text-lg text-slate-gray dark:text-neutral-400"
                     href={item.href}
                     key={item.label}
                   >
@@ -33,6 +39,34 @@ const Nav = () => {
                 </li>
               );
             })}
+            <span
+              className="-mr-8 font-montserrat leading-normal text-lg text-slate-gray dark:text-neutral-400"
+              onClick={() => setDarkMode(!darkMode)}
+            >
+              Toggle Dark mode
+            </span>
+            <div className="flex">
+              <li>
+                <Switch.Group>
+                  <Switch
+                    checked={darkMode}
+                    onChange={setDarkMode}
+                    className={`${
+                      darkMode ? "bg-dark-coral-red" : "bg-coral-red"
+                    }
+                  relative inline-flex h-[38px] w-[74px] cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out`}
+                  >
+                    <span
+                      aria-hidden="true"
+                      className={`${
+                        darkMode ? "translate-x-9" : "translate-x-0"
+                      }
+                    pointer-events-none inline-block h-[34px] w-[34px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
+                    />
+                  </Switch>
+                </Switch.Group>
+              </li>
+            </div>
           </ul>
           {/* mobile nav */}
           <div className="hidden max-lg:block" onClick={() => setShow(!show)}>
@@ -67,6 +101,32 @@ const Nav = () => {
                       </li>
                     );
                   })}
+                  <span
+                    className="-mr-8 font-montserrat leading-normal text-lg text-slate-gray dark:text-neutral-500"
+                    onClick={() => setDarkMode(!darkMode)}
+                  >
+                    Toggle Dark mode
+                  </span>
+                  <li>
+                    <Switch.Group>
+                      <Switch
+                        checked={darkMode}
+                        onChange={setDarkMode}
+                        className={`${
+                          darkMode ? "bg-dark-coral-red" : "bg-coral-red"
+                        }
+                  relative inline-flex h-[38px] w-[74px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out`}
+                      >
+                        <span
+                          aria-hidden="true"
+                          className={`${
+                            darkMode ? "translate-x-9" : "translate-x-0"
+                          }
+                    pointer-events-none inline-block h-[34px] w-[34px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
+                        />
+                      </Switch>
+                    </Switch.Group>
+                  </li>
                 </ul>
               </div>
             )}

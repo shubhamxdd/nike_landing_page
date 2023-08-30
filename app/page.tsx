@@ -7,16 +7,14 @@ import {
   SpecialOffer,
   Subscribe,
   SuperQuality,
-  Nav,
 } from "@/components";
 
 export default function Home() {
   return (
     <>
       <main className="relative dark:bg-gray-700">
-        <Nav />
         <section className="xl:padding-l wide:padding-r padding-b">
-        <Hero />
+          <Hero />
         </section>
         <section className="padding">
           <PopularProducts />
