@@ -24,7 +24,9 @@ const Hero = () => {
               The New Arrival
             </span>
             <br />
-            <span className="text-coral-red inline-block mt-3 dark:text-dark-coral-red">Nike</span>{" "}
+            <span className="text-coral-red inline-block mt-3 dark:text-dark-coral-red">
+              Nike
+            </span>{" "}
             <span className="dark:text-white-400">Shoes</span>
           </h1>
           <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-8 sm:max-w-sm dark:text-white-400">
@@ -51,7 +53,7 @@ const Hero = () => {
             })}
           </div>
         </div>
-        <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center ">
+        <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center rounded-b-lg ">
           <Image
             src={bigShoeImg}
             alt="big-shoe"
