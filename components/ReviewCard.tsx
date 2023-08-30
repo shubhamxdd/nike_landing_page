@@ -17,7 +17,7 @@ const ReviewCard = ({
         width={120}
         height={120}
       />
-      <p className="mt-6 max-w-sm text-center font-montserrat text-slate-gray text-xl leading-7">
+      <p className="mt-6 max-w-sm text-center font-montserrat text-slate-gray text-xl leading-7 dark:text-white-400">
         {feedback}
       </p>
       <div className="flex mt-3 justify-center items-center gap-2">
@@ -28,9 +28,9 @@ const ReviewCard = ({
           height={24}
           className="object-contain m-0"
         />
-        <p className="text-xl font-montserrat text-slate-gray">{rating}</p>
+        <p className="text-xl font-montserrat text-slate-gray dark:text-white-400">{rating}</p>
       </div>
-      <h3 className="mt-1 font-palanquin text-2xl text-center font-bold">
+      <h3 className="mt-1 font-palanquin text-2xl text-center font-bold dark:text-white-400">
         {customerName}
       </h3>
     </div>

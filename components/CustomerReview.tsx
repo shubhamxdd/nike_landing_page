@@ -5,10 +5,10 @@ const CustomerReview = () => {
   return (
     <div className="pt-20 pb-20" id="reviews">
       <section className="max-container">
-        <h3 className="font-palanquin text-center text-4xl font-bold">
-          What Our <span className="text-coral-red">Customers</span> Say?
+        <h3 className="font-palanquin text-center text-4xl font-bold dark:text-white-400">
+          What Our <span className="text-coral-red dark:text-dark-coral-red">Customers</span> Say?
         </h3>
-        <p className="info-text text-center m-auto mt-4 max-w-lg">
+        <p className="info-text text-center m-auto mt-4 max-w-lg dark:text-white-400">
           Hear genuine stories from our satisfied customers about their
           exceptional experiences with us.
         </p>

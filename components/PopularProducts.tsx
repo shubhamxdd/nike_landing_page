@@ -13,11 +13,11 @@ const PopularProducts = () => {
 
   return (
     <section id="products" className="max-container">
-      <div className="flex flex-col justify-start gap-5">
+      <div className="flex flex-col justify-start gap-5 dark:text-white-400">
         <h2 className="text-4xl font-bold font-palanquin mt-24">
-          Our <span className="text-coral-red">Popular</span> Products
+          Our <span className="text-coral-red dark:text-dark-coral-red">Popular</span> Products
         </h2>
-        <p className="font-montserrat lg:max-w-lg mt-12 text-slate-gray">
+        <p className="font-montserrat lg:max-w-lg mt-12 text-slate-gray dark:text-white-400">
           Experience top-notch quality and style with our sought-after
           selections. Discover a world of comfort, design, and value.
         </p>
@@ -25,7 +25,7 @@ const PopularProducts = () => {
       <div className="mt-16 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-14">
         {products.map((product) => (
           <>
-            <div onClick={openModal}>
+            <div onClick={openModal} className="dark:text-white-400">
               <PopularProductCard
                 key={product.name}
                 imgURL={product.imgURL}

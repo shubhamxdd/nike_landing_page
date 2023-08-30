@@ -54,16 +54,18 @@ const ShoeCardModal = ({
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                  <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                  <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white dark:bg-gray-600  p-6 text-left align-middle shadow-xl  transition-all">
                     <Dialog.Title
                       as="h3"
-                      className="text-4xl font-medium text-gray-900"
+                      className="text-4xl font-medium text-gray-900 dark:text-white-400"
                     >
                       {name}
                     </Dialog.Title>
                     <Image src={imgURL} alt="shoe image" className="mt-5" />
                     <div className="mt-2">
-                      <p className="text-xl text-coral-red mt-5 mb-5">{price}</p>
+                      <p className="text-xl text-coral-red dark:text-dark-coral-red mt-5 mb-5">
+                        {price}
+                      </p>
                     </div>
 
                     <div className="mt-4">

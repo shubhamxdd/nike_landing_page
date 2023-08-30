@@ -7,7 +7,7 @@ const SpecialOffer = () => {
   return (
     <>
       <section className="flex justify-wrap items-center max-xl:flex-col-reverse gap-10 max-container">
-        <div className="flex-1">
+        <div className="flex-1 ">
           <Image
             src={offer}
             width={773}
@@ -18,14 +18,15 @@ const SpecialOffer = () => {
         </div>
         <div>
           <h2 className="mt-10 font-palanquin text-4xl lg:max-w-lg font-bold capitalize">
-            <span className="text-coral-red">Special</span> Offer
+            <span className="text-coral-red dark:text-dark-coral-red">Special</span>{" "}
+            <span className="dark:text-white-400">Offer</span>
           </h2>
-          <p className="mt-4 lg:max-w-lg info-text">
+          <p className="mt-4 lg:max-w-lg info-text dark:text-white-400">
             Embark on a shopping journey that redefines your experience with
             unbeatable deals. From premier selections to incredible savings, we
             offer unparalleled value that sets us apart.
           </p>
-          <p className="mt-6 lg:max-w-lg info-text">
+          <p className="mt-6 lg:max-w-lg info-text dark:text-white-400">
             Navigate a realm of possibilities designed to fulfill your unique
             desires, surpassing the loftiest expectations. Your journey with us
             is nothing short of exceptional.
@@ -40,7 +41,7 @@ const SpecialOffer = () => {
               label="Learn More"
               backgroundColor="bg-white"
               textColor="text-slate-gray"
-              hoverClass="hover:bg-coral-red hover:text-white"
+              hoverClass="hover:bg-coral-red  hover:text-white"
               borderColor="border-coral-red"
             />
           </div>

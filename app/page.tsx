@@ -13,10 +13,10 @@ import {
 export default function Home() {
   return (
     <>
-      <main className="relative">
+      <main className="relative dark:bg-gray-700">
         <Nav />
         <section className="xl:padding-l wide:padding-r padding-b">
-          <Hero />
+        <Hero />
         </section>
         <section className="padding">
           <PopularProducts />
@@ -30,7 +30,7 @@ export default function Home() {
         <section className="padding">
           <SpecialOffer />
         </section>
-        <section className="padding bg-pale-blue">
+        <section className="padding">
           <CustomerReview />
         </section>
         <section className="padding-x sm:py-32 py-16w w-full">

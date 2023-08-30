@@ -17,7 +17,7 @@ const Button = ({
       ${
         backgroundColor
           ? `${backgroundColor} ${textColor} ${borderColor} `
-          : "bg-coral-red  text-white border-coral-red"
+          : "bg-coral-red  text-white border-coral-red dark:bg-dark-coral-red"
       }`}
       >
         {label}
