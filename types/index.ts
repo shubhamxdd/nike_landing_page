@@ -32,3 +32,18 @@ export interface ReviewCardProps {
   rating: number;
   feedback: string;
 }
+
+export interface NavProps {
+  darkMode: boolean;
+  setDarkMode: (darkMode: boolean) => void;
+}
+export interface ShoeCardModalProps {
+  imgURL: any;
+  price: string;
+  name: string;
+  rating: number;
+  isOpen: any;
+  setIsOpen: any;
+  openModal: any;
+  closeModal: any;
+}

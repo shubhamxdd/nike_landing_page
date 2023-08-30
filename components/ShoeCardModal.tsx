@@ -4,17 +4,9 @@ import { Dialog, Transition } from "@headlessui/react";
 
 import { Fragment, useState } from "react";
 import Image from "next/image";
+import { ShoeCardModalProps } from "@/types";
 
-interface ShoeCardModalProps {
-  imgURL: any;
-  price: string;
-  name: string;
-  rating: number;
-  isOpen: any;
-  setIsOpen: any;
-  openModal: any;
-  closeModal: any;
-}
+
 
 const ShoeCardModal = ({
   imgURL,
