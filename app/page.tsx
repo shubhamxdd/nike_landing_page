@@ -9,6 +9,13 @@ import {
   SuperQuality,
 } from "@/components";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Nike",
+  description: "Nike store",
+};
+
 export default function Home() {
   return (
     <>
